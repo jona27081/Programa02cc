@@ -15,13 +15,8 @@ public class Programa02 {
 
     public static void main(String[] args) {
         
-        Usuario ins = new Usuario();
-        String clave = JOptionPane.showInputDialog(null, "Clave: ");
-        String nombre = JOptionPane.showInputDialog(null, "Nombre: ");
-        String dir = JOptionPane.showInputDialog(null, "Direccion: ");
-        String num = JOptionPane.showInputDialog(null, "Numero: ");
-        ins.insertOne(clave, nombre, dir, num);
-        //System.out.println(clave + nombre + dir + num);
+        Singleton singleton = Singleton.getInstance();
+        singleton.test();
         
     }
 }
